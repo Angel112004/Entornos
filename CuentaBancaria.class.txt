@@ -26,7 +26,12 @@ class CuentaBancaria
 	}
 	
 	////////////////////////////////////////////////////////////////////////////
-	
+        public void setTipoIntereses(double TipoIntereses)
+	{
+                this.TipoIntereses = TipoIntereses;
+	}
+	////////////////////////////////////////////////////////////////////////////
+
 	public void setNomTitular(String nomTitular)
 	{
 		this.nomTitular = nomTitular;
@@ -43,7 +48,11 @@ class CuentaBancaria
 	{
 		return numCuenta;
 	}
-	
+	////////////
+	public double getTipoIntereses()
+	{
+                return TipoIntereses;
+	}
 	////////////////////////////////////////////////////////////////////////////
 	
 	public String getNomTitular()
