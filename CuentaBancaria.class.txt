@@ -4,12 +4,13 @@ class CuentaBancaria
 	private String numCuenta;
 	private String nomTitular;
 	private double saldo;
-	double TipoIntereses;
+	Private double TipoIntereses;
 		
 	//Metodos
 	
-	public CuentaBancaria(String numCuenta,String nomTitular,double saldo)
-	{
+	public CuentaBancaria(String numCuenta,String nomTitular,double saldo,double TipoIntereses)
+	{      
+	        this.TipoIntereses = TipoIntereses;
 		this.numCuenta = numCuenta;
 		this.nomTitular = nomTitular;
 		ingreso(saldo);
